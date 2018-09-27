@@ -1,0 +1,54 @@
+.App {
+  padding: 5% 10% 5% 10%;
+  text-align: center;
+  background: white;
+  height: 100%;
+}
+
+.part {
+  border: 1px solid #eaecef;
+  border-radius: 5px;
+  padding: 0 10px 10px 10px;
+}
+
+.content {
+  /*padding: 10px 20px 10px 20px;*/
+  text-align: left;
+  /*background: #f1f1f1;*/
+  border-radius: 5px;
+}
+
+body {
+  padding: 0 25% 0 25%;
+  background: #eaeaea;
+  /*height: -webkit-fill-available;*/
+  font-family: sans-serif;
+}
+
+h1, h2, h3 {
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaecef;
+}
+
+h2 {
+  border: none;
+}
+
+h2 {
+  margin: 4% 0 0 0;
+}
+
+h3 {
+  margin: 3% 0 2% 0;
+}
+
+p {
+  text-align: left;
+  margin: 5px 0 0 0;
+}
+
+a {
+  color: darkred;
+  text-decoration-line: none;
+}
