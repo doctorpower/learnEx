@@ -1,34 +1,32 @@
 .App {
   padding: 5% 10% 5% 10%;
-  text-align: center;
   background: white;
   height: 100%;
+  line-height: 1.5;
 }
 
 .part {
-  border: 1px solid #eaecef;
+  border: 1px solid #cecccc;
   border-radius: 5px;
   padding: 0 10px 10px 10px;
+  background: #f1f1f1;
 }
 
 .content {
-  /*padding: 10px 20px 10px 20px;*/
   text-align: left;
-  /*background: #f1f1f1;*/
-  border-radius: 5px;
 }
 
 body {
-  padding: 0 25% 0 25%;
+  margin: 0 auto;
   background: #eaeaea;
-  /*height: -webkit-fill-available;*/
   font-family: sans-serif;
+  width: 980px;
 }
 
 h1, h2, h3 {
   text-align: left;
   padding-bottom: 10px;
-  border-bottom: 1px solid #eaecef;
+  border-bottom: 1px solid #d0d0d0;
 }
 
 h2 {
@@ -36,6 +34,7 @@ h2 {
 }
 
 h2 {
+  display: flex;
   margin: 4% 0 0 0;
 }
 
@@ -49,6 +48,36 @@ p {
 }
 
 a {
-  color: darkred;
+  color: #0080ef;
   text-decoration-line: none;
+}
+
+a:hover {
+  text-decoration-line: underline;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  background: #000000;
+  border-radius: 5px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+strong {
+  text-transform: uppercase;
+}
+
+.time {
+  padding: 5px;
+  margin: 4px 0 0 10px;
+  height: 20px;
+  background: #e4e4e4;
+  border-radius: 5px;
+  font-weight: lighter;
+  font-size: 15px;
 }
