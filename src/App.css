@@ -9,7 +9,7 @@
   border: 1px solid #cecccc;
   border-radius: 5px;
   padding: 0 10px 10px 10px;
-  background: #f1f1f1;
+  background: #f1f1f170;
 }
 
 .content {
@@ -77,10 +77,11 @@ strong {
 }
 
 .time {
+  border: 1px solid #cecccc;
   padding: 5px;
-  margin: 4px 0 0 10px;
+  margin: 0 0 0 10px;
   height: 20px;
-  background: #e4e4e4;
+  background: #e4e4e4a8;
   border-radius: 5px;
   font-weight: lighter;
   font-size: 15px;

@@ -34,7 +34,11 @@ class App extends Component {
                 link: 'Обучение',
                 desc: 'Для запуска среды разработки на этом сайте необходимо в окне "HTML Document Structure Demo" нажать на "EDIT ON CODEPEN"',
             }],
-            result: 'Результатом является вёрстка сайта, который я ещё не придумал',
+            result: {
+                text: 'Результатом является вёрстка сайта-визитки. Для помощи предоставлена ссылка с примерами. Примеры не стоит воспринимать, как необходимость, это только для вдохновения',
+                hyperlink: 'https://impulse-design.com.ua/9-primerov-luchshikh-sajtov-vizitok-dlya-malogo-biznesa.html',
+                link: 'Примеры сайтов-визиток',
+            },
         },
         {
             title: 'JavaScript',
@@ -50,7 +54,7 @@ class App extends Component {
                 link: 'Обучение',
                 desc: null,
             }],
-            result: 'Результатом является знание (спасибо, кэп)',
+            result: 'Результатом является знание (спасибо)',
         },
         {
             title: 'React.js',
@@ -66,7 +70,13 @@ class App extends Component {
                     hyperlink: 'https://webformyself.com/5-luchshix-praktik-v-arxitekture-react/',
                     link: 'Структура React-приложения',
                     desc: 'Для изучения лучшей практики приложений на React',
-                }
+                },
+                {
+                    hyperlink: 'https://webformyself.com/asinxronnaya-zagruzka-fajlov-s-pomoshhyu-node-i-react/',
+                    link: 'Изучение Axios',
+                    desc: 'Axios необходим для связи приложения с сервером. Использовать его не нужно, только запомнить, в последующих модулях будет нужен. ' +
+                        'На данном ресурсе достаточно рассмотреть только примеры с axios',
+                },
                 ],
             english: [
                 {
@@ -83,6 +93,11 @@ class App extends Component {
                     hyperlink: 'http://thewebland.net/react-js/',
                     link: 'Структура React-приложения',
                     desc: 'Для изучения лучшей практики приложений на React',
+                },
+                {
+                    hyperlink: 'https://alligator.io/react/axios-react/',
+                    link: 'Изучение Axios',
+                    desc: 'Axios необходим для связи приложения с сервером. Использовать его не нужно, только запомнить, в последующих модулях будет нужен',
                 },
             ],
             result: 'Результатом является тестовое приложение, которое я ещё не придумал',
@@ -173,7 +188,7 @@ class App extends Component {
                 {
                     hyperlink: 'https://expressjs.com/ru/',
                     link: 'Обучение',
-                    desc: 'Необходимо изучить сначала "Начало работы" затем "Руководство"'
+                    desc: 'Необходимо изучить сначала "Начало работы" затем "Руководство"',
                 },
             ],
             english: [
@@ -184,6 +199,46 @@ class App extends Component {
                 },
             ],
             result: 'Результатом является использование Express в серверной части приложения',
+        },
+        {
+            title: 'MongoDB/Mongoose',
+            time: '8 часов',
+            desc: 'Ознакомление с NoSQL СУБД - MongoDB и библиотекой для работы с MongoDB - Mongoose',
+            russian: [
+                {
+                    hyperlink: 'https://1cloud.ru/help/linux/ustanovka-mongodb-na-ubuntu',
+                    link: 'Установка и запуск',
+                    desc: null,
+                },
+                {
+                    hyperlink: 'https://download.robomongo.org/1.2.1/linux/robo3t-1.2.1-linux-x86_64-3e50a65.tar.gz',
+                    link: 'Скачать Robo3T',
+                    desc: 'Robo3T необходим для визуального отображения БД',
+                },
+                {
+                    hyperlink: 'https://code.tutsplus.com/ru/articles/an-introduction-to-mongoose-for-mongodb-and-nodejs--cms-29527',
+                    link: 'Обучение Mongoose',
+                    desc: 'Необходимо обратить внимание на порт, для дальнейшего подключения',
+                },
+            ],
+            english: [
+                {
+                    hyperlink: 'https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/',
+                    link: 'Установка и запуск',
+                    desc: 'Необходимо обратить внимание на порт, для дальнейшего подключения',
+                },
+                {
+                    hyperlink: 'https://download.robomongo.org/1.2.1/linux/robo3t-1.2.1-linux-x86_64-3e50a65.tar.gz',
+                    link: 'Скачать Robo3T',
+                    desc: 'Robo3T необходим для визуального отображения БД',
+                },
+                {
+                    hyperlink: 'https://mongoosejs.com/docs/',
+                    link: 'Обучение Mongoose',
+                    desc: null,
+                },
+            ],
+            result: 'Результатом является работа с MongoDB из приложения',
         },
 
     ];
@@ -234,11 +289,16 @@ class App extends Component {
                                 ))}
                             </div>
                             <h3>Результат:</h3>
-                            <p>{item.result}</p>
+                            {item.result.hyperlink ?
+                                <div>
+                                    <p>{item.result.text}</p>
+                                    <a href={item.result.hyperlink} target="_blank">{item.result.link}</a>
+                                </div>
+                                : <p>{item.result}</p>
+                            }
                         </div>
                     </div>
                 ))}
-
             </div>
         );
     }
