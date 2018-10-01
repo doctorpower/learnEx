@@ -21,24 +21,79 @@ class App extends Component {
             result: 'Результатом является знание базовых команд, представленных на обучающих страницах (работа с файлами, директориями, навигация)',
         },
         {
-            title: 'html/css',
-            time: '6 часов',
-            desc: 'Ознакомление с языком гипертекстовой разметки (html) и каскадными таблицами стилей (css)',
-            russian: [{
-                hyperlink: 'https://htmlacademy.ru',
-                link: 'Обучение',
-                desc: 'На сайте необходимо нажать кнопку "Начать учиться", после чего следовать программе обучения',
-            }],
-            english: [{
-                hyperlink: 'https://learn.shayhowe.com/html-css/building-your-first-web-page/',
-                link: 'Обучение',
-                desc: 'Для запуска среды разработки на этом сайте необходимо в окне "HTML Document Structure Demo" нажать на "EDIT ON CODEPEN"',
-            }],
-            result: {
-                text: 'Результатом является вёрстка сайта-визитки. Для помощи предоставлена ссылка с примерами. Примеры не стоит воспринимать, как необходимость, это только для вдохновения',
-                hyperlink: 'https://impulse-design.com.ua/9-primerov-luchshikh-sajtov-vizitok-dlya-malogo-biznesa.html',
-                link: 'Примеры сайтов-визиток',
-            },
+            title: 'Git',
+            time: '3 часа',
+            desc: 'Ознакомление с системой контроля версий - Git',
+            russian: [
+                {
+                    hyperlink: 'https://git-scm.com/book/ru/v2',
+                    link: 'Обучение основам',
+                    desc: 'Необходимо пройти первые 2 главы',
+                },
+                {
+                    hyperlink: 'https://learngitbranching.js.org/',
+                    link: 'Обучение ветвлению',
+                    desc: null,
+                },
+            ],
+            english: [
+                {
+                    hyperlink: 'https://learngitbranching.js.org/',
+                    link: 'Обучение основам',
+                    desc: 'Необходимо пройти первые 2 главы',
+                },
+                {
+                    hyperlink: 'https://git-scm.com/book/en/v2',
+                    link: 'Обучение ветвлению',
+                    desc: null,
+                },
+            ],
+            result: 'Результатом является знание базовых команд, представленных на обучающих страницах (работа с файлами, директориями, навигация)',
+        },
+        {
+            title: 'html/css && UI/UX',
+            time: '8 часов',
+            desc: 'Ознакомление с языком гипертекстовой разметки (html) и каскадными таблицами стилей (css). Основные правила дизайна',
+            russian: [
+                {
+                    hyperlink: 'https://htmlacademy.ru',
+                    link: 'Обучение',
+                    desc: 'На сайте необходимо нажать кнопку "Начать учиться", после чего следовать программе обучения',
+                },
+                {
+                    hyperlink: 'http://thewebland.net/design/7-rules-uxui/',
+                    link: 'UI/UX - 7 наиважнейших правил',
+                    desc: 'Самые важные правила UI/UX',
+                },
+                {
+                    hyperlink: 'https://vc.ru/design/9215-7-rules-for-ui',
+                    link: 'UI/UX рекомендации',
+                    desc: null,
+                },
+            ],
+            english: [
+                {
+                    hyperlink: 'https://learn.shayhowe.com/html-css/building-your-first-web-page/',
+                    link: 'Обучение',
+                    desc: 'Для запуска среды разработки на этом сайте необходимо в окне "HTML Document Structure Demo" нажать на "EDIT ON CODEPEN"',
+                },
+                {
+                    hyperlink: 'http://thewebland.net/design/7-rules-uxui/',
+                    link: 'UI/UX - 7 наиважнейших правил (русский контент)',
+                    desc: 'Самые важные правила UI/UX',
+                },
+                {
+                    hyperlink: 'https://theblog.adobe.com/4-golden-rules-ui-design/',
+                    link: 'UI/UX рекомендации',
+                    desc: null,
+                },
+            ],
+            // result: {
+            //     text: 'Результатом является вёрстка сайта-визитки. Для помощи предоставлена ссылка с примерами. Примеры не стоит воспринимать, как необходимость, это только для вдохновения',
+            //     hyperlink: 'https://impulse-design.com.ua/9-primerov-luchshikh-sajtov-vizitok-dlya-malogo-biznesa.html',
+            //     link: 'Примеры сайтов-визиток',
+            // },
+            result: 'Результатом является вёрстка сайта, который вы получите от лида. Необходимо сверстать точную копию сайта. Требуется только html и css'
         },
         {
             title: 'JavaScript',
