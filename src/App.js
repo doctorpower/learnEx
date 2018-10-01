@@ -22,7 +22,7 @@ class App extends Component {
         },
         {
             title: 'Git',
-            time: '3 часа',
+            time: '2 часа',
             desc: 'Ознакомление с системой контроля версий - Git',
             russian: [
                 {
